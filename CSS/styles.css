@@ -1,0 +1,17 @@
+/* Brayden Coombs 8922782 */
+h1{
+    font-weight: bold;
+}
+
+body {
+    color: blueviolet;
+    font: bolder; 
+    font-size: 7vh;
+    font-size: 2vw;
+    background-color:hsla(120,60%,70%,0.3);
+}
+
+h2 {
+    color: #fc0;
+    font-size: 5vh;
+}
