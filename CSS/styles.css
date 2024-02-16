@@ -8,10 +8,64 @@ body {
     font: bolder; 
     font-size: 7vh;
     font-size: 2vw;
-    background-color:hsla(120,60%,70%,0.3);
+    background-color:hsla(120, 30%, 70%, 0.3);
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
 }
 
 h2 {
     color: #fc0;
     font-size: 5vh;
+}
+
+header{
+    background-color: hsl(208, 100%, 70%)
+}
+
+main{
+    float: left;
+    width: 56.66%;
+    padding: 10px;
+    margin: auto;
+    background-color: hsl(120, 60%, 20%)
+}
+
+aside{
+    float: right;
+    width: 23.33%;
+    padding: 10px;
+    margin: auto;
+    background-color: hsl(35, 100%, 80%);
+}
+
+footer{
+    clear: both;
+    background-color: hsl(30, 45%, 70%);
+}
+
+.structural{
+    padding: 5px;
+    margin: auto;
+    border: 5px hidden;
+}
+
+#Info{
+    color: rgb(200, 0, 250);
+}
+
+#FF{
+    color: rgb(200, 0, 250);
+}
+
+#copy{
+    color: rgb(255, 70, 0);
+}
+
+a:hover{
+    color: #999;
+}
+
+footer p{
+    font-size: small;
 }
