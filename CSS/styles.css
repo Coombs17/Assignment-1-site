@@ -1,6 +1,34 @@
 /* Brayden Coombs 8922782 */
-h1{
+
+input[type="radio"],
+input[type="checkbox"] {
+    height: 2em;
+    width: 2em;
+}
+
+select,
+option,
+label,
+legend,
+input[type="submit"] {
+    font-size: 1.5rem;
     font-weight: bold;
+    font-variant: small-caps;
+}
+
+textarea {
+    width: 50%;
+    display: block;
+}
+
+fieldset {
+    border: none;
+}
+
+h1 {
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 50px;
 }
 
 body {
@@ -19,11 +47,11 @@ h2 {
     font-size: 5vh;
 }
 
-header{
+header {
     background-color: hsl(208, 100%, 70%)
 }
 
-main{
+main {
     float: left;
     width: 56.66%;
     padding: 10px;
@@ -31,7 +59,7 @@ main{
     background-color: hsl(120, 60%, 20%)
 }
 
-aside{
+aside {
     float: right;
     width: 23.33%;
     padding: 10px;
@@ -39,33 +67,62 @@ aside{
     background-color: hsl(35, 100%, 80%);
 }
 
-footer{
+footer {
     clear: both;
     background-color: hsl(30, 45%, 70%);
 }
 
-.structural{
+.structural {
     padding: 5px;
     margin: auto;
     border: 5px hidden;
 }
 
-#Info{
+#Info {
     color: rgb(200, 0, 250);
 }
 
-#FF{
+#FF {
     color: rgb(200, 0, 250);
 }
 
-#copy{
+#copy {
     color: rgb(255, 70, 0);
 }
 
-a:hover{
+aside a:hover {
     color: #999;
 }
 
-footer p{
+footer p {
     font-size: small;
+}
+
+aside ul {
+    list-style-type: square;
+    line-height: 2em;
+    color: rgba(0,0,230,0.3);
+}
+
+li {
+    display: inline;
+}
+
+nav li a {
+    display: inline-block;
+    border: 2px solid indigo;
+    color: indigo;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: cornsilk;
+}
+
+nav li a:hover {
+    color: cornsilk;
+    background-color: indigo;
+    border-color: cornsilk;
+}
+
+form {
+    border: 5px dashed blueviolet;
 }
