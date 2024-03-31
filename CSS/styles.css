@@ -1,5 +1,47 @@
 /* Brayden Coombs 8922782 */
 
+html {
+    font: 1.25rem bolder; 
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+figure {
+    border: 0.125rem solid black; 
+    padding: 1rem; 
+}
+
+#gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+figure img{
+    width: 80%;
+    height: 80%;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 10px;
+    }
+
+    main#gallery{
+        grid-template-columns: 1fr; 
+    }
+
+    body {
+        display: block; 
+    }
+}
+
 input[type="radio"],
 input[type="checkbox"] {
     height: 2em;
@@ -28,23 +70,24 @@ fieldset {
 h1 {
     font-weight: bold;
     color: blueviolet;
-    font-size: 50px;
+    font-size: 3.125rem; 
 }
 
 body {
     color: blueviolet;
-    font: bolder; 
-    font-size: 7vh;
-    font-size: 2vw;
-    background-color:hsla(120, 30%, 70%, 0.3);
-    max-width: 900px;
+    font-size: 7vh; 
+    font-size: 2vw; 
+    background-color: hsla(120, 30%, 70%, 0.3);
+    max-width: 56.25rem; 
     margin: auto;
-    padding: 10px;
+    padding: 1.25rem; 
+    display: flex;
+    flex-direction: column;
 }
 
 h2 {
     color: #fc0;
-    font-size: 5vh;
+    font-size: 5vh; 
 }
 
 header {
@@ -52,30 +95,27 @@ header {
 }
 
 main {
-    float: left;
-    width: 56.66%;
-    padding: 10px;
+    flex: 2 1 70%;
+    padding: 1.25rem; 
     margin: auto;
     background-color: hsl(120, 60%, 20%)
 }
 
 aside {
-    float: right;
-    width: 23.33%;
-    padding: 10px;
+    flex: 1 1 30%;
+    padding: 1.25rem; 
     margin: auto;
     background-color: hsl(35, 100%, 80%);
 }
 
 footer {
-    clear: both;
     background-color: hsl(30, 45%, 70%);
 }
 
 .structural {
-    padding: 5px;
-    margin: auto;
-    border: 5px hidden;
+    padding: 0.3125rem; 
+    margin: 1rem;
+    border: 0.3125rem hidden; 
 }
 
 #Info {
@@ -110,10 +150,10 @@ li {
 
 nav li a {
     display: inline-block;
-    border: 2px solid indigo;
+    border: 0.125rem solid indigo;
     color: indigo;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 1em;
     background-color: cornsilk;
 }
 
@@ -124,5 +164,5 @@ nav li a:hover {
 }
 
 form {
-    border: 5px dashed blueviolet;
+    border: 0.3125rem dashed blueviolet;
 }
